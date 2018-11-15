@@ -27,6 +27,7 @@ $category = $result->fetch();
 		<label>Nazwa kategorii</label>
 		<input type="text" name="name" value="<?php echo $category['name']; ?>" class="form-control">
 	</div>
+	
 
 	<div class="form-group">
 		<button class="btn btn-primary">Zapisz</button>

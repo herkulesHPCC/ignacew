@@ -17,7 +17,7 @@ if(file_exists($moduleDir)) {
 	$content = ob_get_contents();
 	ob_end_clean();
 
-	include('layouts/admin.php');
+	include('layouts/index.php');
 } else {
 	header("HTTP/1.1 404 Not Found");
 	echo '404';
