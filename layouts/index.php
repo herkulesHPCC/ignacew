@@ -19,38 +19,64 @@ $currentpage = $_SERVER['REQUEST_URI'];
 
 <body>
 
-		<div id="sitename" >
+		<div id="sitename"  >
 			<div class="width" >
 			<a href="index.php?v=posts&id_categories=1&name=Strona%20główna"><img src="images/logo.png"/></a>
-
 				<nav>
 					<ul>
-        					
+					<!-- wyświetlanie w zależności czy użytkownik jest zalogowany -->
+						
          	   				<li><a href="index.php?v=categories">Kategorie</a></li>
-          	 				<li class="end"><a href="index.php?v=articles">Artykuły</a></li>
-        				</ul>
+							<li class="end"><a href="index.php?v=articles">Artykuły</a></li>
+						
+						
+        			</ul>
 				</nav>
 	
 				<div class="clear"></div>
 			</div>
 		</div>
 		<header>
-				<div class="w3-content w3-section" >
-					<img class="mySlides w3-animate-fading budynek" src="images/budynek.jpg" style="width:100%">
-					<img class="mySlides w3-animate-fading budynek" src="images/budynek2.jpg" style="width:100%">
-					<img class="mySlides w3-animate-fading budynek" src="images/budynek3.jpg" style="width:100%">
+		<div  class="w3-content w3-section" >
+					<img class="mySlides w3-animate-fading budynek"  src="images/budynek.jpg" style="width:100%">
+					<img class="mySlides w3-animate-fading budynek"  src="images/budynek2.jpg" style="width:100%">
+					<img class="mySlides w3-animate-fading budynek"  src="images/budynek3.jpg" style="width:100%">
 				</div>
+		<div style=" padding: 15px; font-size: 12px; color: #fff; margin-top: -230px; margin-left: 25%; z-index: 100; position: absolute;  border: 1px solid; width: 260px; height: 220px; font-family: 'Oswald', sans-serif;   background: linear-gradient(to bottom, rgba(95,167,230,1) 0%,rgba(1,102,191,1) 100%);" class="box">
+				<img style="margin-left: -15px;" src="images/title1.jpg">
+				</br>
+				<p style="margin-bottom: -10px !important;"></br>
+				Internat to miejsce gdzie wychowankowie zakładu mieszkają.  
+				Spędzają tam większość czasu w związku z czym znaczna część zajęć wychowawczych odbywa się w tym dziale.
+				 Chłopcy są zakwaterowani w 2–3 osobowych pokojach...	</p>			
+		</div>
 
+		<div style=" padding: 15px; font-size: 12px; color: #fff; margin-top: -230px; margin-left: 43%; z-index: 100; position: absolute;  border: 1px solid; width: 260px; height: 220px; font-family: 'Oswald', sans-serif;  background: linear-gradient(to bottom, rgba(255,202,78,1) 0%,rgba(255,154,22,1) 100%);" class="box">
+				<img style="margin-left: -15px;" src="images/title2.jpg">
+				</br>
+				<p style="margin-bottom: -10px !important;"></br>
+				
+				Praca w szkole zorganizowana jest w sześciu oddziałach : 3-letnie Gimnazjum Nr 2 (4 oddziały), 2-letnia Zasadnicza Szkoła Zawodowa (2 oddziały). 
+				W szkole zawodowej realizowana jest nauka....				</p>			
+		</div>
+		<div style=" padding: 15px; font-size: 12px; color: #fff; margin-top: -230px; margin-left: 61%; z-index: 100; position: absolute;  border: 1px solid; width: 260px; height: 220px; font-family: 'Oswald', sans-serif;  background: linear-gradient(to bottom, rgba(120,189,52,1) 0%,rgba(108,159,30,1) 100%);" class="box">
+				<img style="margin-left: -15px;" src="images/title3.jpg">
+				</br>
+				<p style="margin-bottom: -10px !important;"></br>
+				W warsztatach zatrudnionych jest ośmiu nauczycieli zawodu.
+				 Wszyscy posiadają pełne kwalifikacje do wykonywania swoich obowiązków. 
+				Nauczyciele zawodu posiadają samodzielnie opracowane na podstawie stosownych programów rozkłady...					</p>			
+		</div>
 			<!-- slider start -->
 			<script type="text/javascript" src="js/slider.js"></script>
 			<!-- slider end -->
 
 
-			<div class="width">
 			
-			</div>
 		</header>
+		
 		<section id="body" class="width clear">
+		</br></br>
 			<aside id="sidebar" class="column-left">
 				<ul>
                 	<li>
@@ -65,7 +91,7 @@ $currentpage = $_SERVER['REQUEST_URI'];
 			<?php
 			
 			if($home==$currentpage) {
-			echo '<a href="index.php?v=posts&id_categories=23&name=Zamówienia%20publiczne">
+			echo '</br></br><a href="index.php?v=posts&id_categories=23&name=Zamówienia%20publiczne">
 			<div class="zamowienia"><b>Zamówienia publiczne</b> - sprawdź szczegóły naszej oferty ->
 			</div>
 			</a>';

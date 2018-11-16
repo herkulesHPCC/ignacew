@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 //paginator start
  function t1($val, $min, $max) {
 	return ($val >= $min && $val <= $max);
@@ -24,12 +27,12 @@ $articles = $result->fetchAll();
 <!-- blog start -->
 <?php foreach($articles as $artykul) {
 echo '
-</br><hr><div class="blog-post">
+</br><hr><div class="blog-post" style="overflow: hidden; height:200px;">
             <h2 class="blog-post-title">'.$artykul['title'].' </h2>
             <p class="blog-post-meta">'.$artykul['date_add'].'</p>
             <p>'.$artykul['content'].'</p>
-            <a href="?tak" class="button">Czytaj więcej</a>
-</div>';
+            
+</div><a href="index.php?v=wpis&tag='.$artykul['id'].'" class="button">Czytaj więcej</a>';
 }
 if( $page > 4 ) {
     echo '<a href="index.php?v=posts&id_categories=23&name=Zamówienia%20publiczne&page=1"> < Najnowsze wpisy </a> | ';
